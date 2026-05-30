@@ -13,7 +13,7 @@ export interface NewUserDataUpdate {
 export interface UserLoginData {
   id: string;
   email: string;
-  password_user: string;
+  senha_hash: string;
 }
 
 export interface GetUserData {

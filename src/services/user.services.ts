@@ -58,7 +58,7 @@ export async function autorizedLogin(
       return { message: "User not found" };
     }
 
-    const passwordMatch = await comparePassword(password, user.password_user);
+    const passwordMatch = await comparePassword(password, user.senha_hash);
 
     if (!passwordMatch) {
       return { message: "Invalid password" };
